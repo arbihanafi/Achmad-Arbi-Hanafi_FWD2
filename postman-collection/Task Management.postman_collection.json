@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "fb61c91a-75eb-4f30-a171-ed473a5238a2",
+		"name": "Task Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24023030"
+	},
+	"item": [
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "Menampilkan Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/other/ci_api/api/Tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"other",
+								"ci_api",
+								"api",
+								"Tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menampilkan Detail Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/other/ci_api/api/Tasks?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"other",
+								"ci_api",
+								"api",
+								"Tasks"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menghapus Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/other/ci_api/api/Tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"other",
+								"ci_api",
+								"api",
+								"Tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menambahkan Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "'Harry Potter and the Prisoner of Azkabani'",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "'dikisahkan seorang tahanan bernama Sirius Black berhasil kabur dari Azkaban dan berniat membunuh Harry.'",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2004-03-02",
+									"type": "text"
+								},
+								{
+									"key": "finish_date",
+									"value": "2006-05-11",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "New",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/other/ci_api/api/Tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"other",
+								"ci_api",
+								"api",
+								"Tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mengubah Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "'Harry Potter and the Prisoner of Azkabani'",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "'dikisahkan seorang tahanan bernama Sirius Black berhasil kabur dari Azkaban dan berniat membunuh Harry.'",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2004-03-02",
+									"type": "text"
+								},
+								{
+									"key": "finish_date",
+									"value": "2008-10-10",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Finish",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/other/ci_api/api/Tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"other",
+								"ci_api",
+								"api",
+								"Tasks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task Categories",
+			"item": [
+				{
+					"name": "Menampilkan Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/other/ci_api/api/Categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"other",
+								"ci_api",
+								"api",
+								"Categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menampilkan Detail Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/other/ci_api/api/Categories?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"other",
+								"ci_api",
+								"api",
+								"Categories"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menghapus Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/other/ci_api/api/Categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"other",
+								"ci_api",
+								"api",
+								"Categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Rachmad Maulana",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/other/ci_api/api/Categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"other",
+								"ci_api",
+								"api",
+								"Categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mengubah data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Arbi Hanafi",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/other/ci_api/api/Categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"other",
+								"ci_api",
+								"api",
+								"Categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
